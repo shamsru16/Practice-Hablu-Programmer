@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hablu html (19-23) audio,form tag 01-02, form A-Z, marquee tag</title>
+</head>
+
+<body>
+    <marquee behavior="scroll" direction="right">
+        <p>Hablu Programmer</p><img
+            src="https://yt3.googleusercontent.com/gkGCWDnt1EjuYae8TzcFSulITuGgy8FSU_35YVkZeoopelsHmz4T0g9LAVfrwd6UFAxweZSRjw=s88-c-k-c0x00ffffff-no-rj"
+            alt="Hablu Programmer">
+    </marquee>
+    <!-- align image in html (https://www.scaler.com/topics/align-image-in-html/) <marquee behavior="scroll" direction="down"><p style="text-align: right;" >Hablu Programmer</p><img style="float: right;"  src="https://yt3.googleusercontent.com/gkGCWDnt1EjuYae8TzcFSulITuGgy8FSU_35YVkZeoopelsHmz4T0g9LAVfrwd6UFAxweZSRjw=s88-c-k-c0x00ffffff-no-rj" alt="Hablu Programmer">
+    </marquee> -->
+    <br><br>
+    <!-- audio tag (https://www.w3schools.com/tags/tag_audio.asp) -->
+    <audio controls preload="auto" autoplay loop muted
+        src="Aat Ta Baje Deri Korish Na - Basudeb Das Bau(audiosong.in).mp3"></audio>
+    <br><br>
+    <audio controls preload="metadata" autoplay loop muted
+        src="Aat Ta Baje Deri Korish Na - Basudeb Das Bau(audiosong.in).mp3" type="audio/mp3">
+    </audio>
+    <br><br>
+    <audio controls preload="none" autoplay loop muted
+        src="Aat Ta Baje Deri Korish Na - Basudeb Das Bau(audiosong.in).mp3" type="audio/mpeg"></audio>
+    <!-- audio tag (https://www.w3schools.com/tags/tag_audio.asp) -->
+    <br><br>
+    <!-- form tag 01-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Us</legend>
+            First Name <br>
+            <input type="text" placeholder="First Name">
+            <br> Last Name <br>
+            <input type="text" placeholder="Last Name">
+            <br>
+            Gender:
+            <input type="radio" name="Gender"> Male
+            <input type="radio" name="Gender"> Female
+            <input type="radio" name="Gender"> Others
+            <br>
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+    <!-- form tag 01-->
+    <br><br>
+    <!-- form tag 02-->
+    <h1>Choose your country</h1>
+    <select multiple size="2">
+        <option value="Bangladesh"> Bangladesh </option>
+        <option value="India"> India </option>
+        <option value="Pakisthan"> Pakisthan </option>
+        <option value="Canada" selected> Canada </option>
+    </select>
+    <br><br>
+    <h1>Enter you message</h1><br>
+    <textarea cols="30" rows="10" Placeholder="Enter your message..."></textarea>
+    <!-- Q. (placeholder not showing) Ans: (If you have an input in your form and placeholder is not showing 
+        because a white space at the beginning, this may be caused for you "value" attribute. 
+        In case you are using variables to fill the value of an input check that there are no white spaces between the commas and the variables.) -->
+    <!-- form tag 02-->
+    <!-- Sign up form (A-Z) -->
+    <form action="#" method="post">
+        <!-- marquee tag (https://www.w3docs.com/learn-html/html-marquee-tag.html) -->
+        <h1 style="text-align: center;">Sign Up Form</h1>
+        <marquee>
+            <h1 style="text-align: center;">Sign Up Form</h1>
+        </marquee>
+        <marquee behavior="alternate" direction="down">
+            <h1 style="text-align: left;">Sign Up Form</h1>
+        </marquee>
+        <hr><br>
+        <!-- User Name -->
+        <label for="user">Name:</label>
+        <input type="text" id="user" name="user" placeholder="User Name">
+        <br>
+        <!-- User Name -->
+        <!-- User mail -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="User Mail" required>
+        <br>
+        <!-- User mail -->
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="Password" name="Password" id="password" placeholder="Password" required>
+        <br>
+        <!-- Password -->
+        <!-- User Phone -->
+        <label for="phone">Phone:</label>
+        <br>
+        <select name="code">
+            <option value="+880">+880</option>
+            <option value="+990">+990</option>
+            <option value="+110">+110</option>
+        </select>
+        <input type="number" id="phone" name="Phone" placeholder="017---" required>
+        <br>
+        <!-- Adding country list by "datalist" tag-->
+        <label for="country">Country</label>
+        <input list="country">
+        <datalist id="country">
+            <option value="Bangladesh"></option>
+            <option value="India"></option>
+            <option value="Canada"></option>
+        </datalist>
+        <!-- Adding country list by "datalist" tag-->
+        <br>
+        <!-- User Phone -->
+        <!-- Gender -->
+        Gender:
+        <input type="radio" id="Gender Male" name="gender">
+        <label for="Gender Male">Male</label>
+        <input type="radio" id="Gender Female" name="gender">
+        <label for="Gender Female">Female</label>
+        <input type="radio" id="Gender Others" name="gender">
+        <label for="Gender Others">Others</label>
+        <br>
+        <!-- Gender -->
+        <!-- Date -->
+        <label for="date">Date of birth</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <!-- Date -->
+        <!-- Time -->
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+        <br>
+        <!-- Time -->
+        <!-- colors -->
+        <label for="colors">Colors</label>
+        <input type="color" id="colors" name="colors">
+        <br>
+        <!-- colors -->
+        <!-- File -->
+        <label for="file">Choose Photo:</label>
+        <input type="file" id="file" name="file">
+        <br>
+        <!-- File -->
+        <!-- checkbox -->
+        <input type="checkbox" id="bike" name="bike">
+        <label for="bike">I have bike</label>
+        <input type="checkbox" id="bicycle" name="bicycle">
+        <label for="bicycle">I have bicycle</label>
+        <br>
+        <!-- checkbox -->
+        <!-- textarea -->
+        <textarea name="comment" cols="30" rows="10" placeholder="Comment here"></textarea>
+        <br>
+        <!-- textarea -->
+        <!-- button -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <!-- button -->
+        <marquee behavior="scroll" direction="up">
+            <h1 style="text-align: right;">Sign Up Form</h1>
+        </marquee>
+        <hr><br>
+    </form>
+    <!-- Sign up form (A-Z) -->
+    <marquee behavior="scroll" direction="left">
+        <p>Hablu Programmer</p><img
+            src="https://yt3.googleusercontent.com/gkGCWDnt1EjuYae8TzcFSulITuGgy8FSU_35YVkZeoopelsHmz4T0g9LAVfrwd6UFAxweZSRjw=s88-c-k-c0x00ffffff-no-rj"
+            alt="Hablu Programmer">
+    </marquee>
+    <!-- align image in html (https://www.scaler.com/topics/align-image-in-html/)<marquee behavior="scroll" direction="down"><p style="text-align: right;" >Hablu Programmer</p><img style="float: right;"  src="https://yt3.googleusercontent.com/gkGCWDnt1EjuYae8TzcFSulITuGgy8FSU_35YVkZeoopelsHmz4T0g9LAVfrwd6UFAxweZSRjw=s88-c-k-c0x00ffffff-no-rj" alt="Hablu Programmer">
+    </marquee> -->
+    <!-- marquee tag (https://www.w3docs.com/learn-html/html-marquee-tag.html) -->
+</body>
+
+</html>

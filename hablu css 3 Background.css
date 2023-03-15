@@ -1,0 +1,24 @@
+h1 {
+  color: red;
+  background-color: green;
+}
+
+body {
+  /* background css examples (https://www.w3schools.com/html/html_images_background.asp) */
+  background-color: black;
+  background-image: url(ZA-wp2.jpg);
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  /* background-position: center ;
+    background-size: cover; */
+
+  /* background-image: url(Cat.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  /* background css examples (https://www.w3schools.com/html/html_images_background.asp) */
+}
+
+p {
+  color: white;
+}

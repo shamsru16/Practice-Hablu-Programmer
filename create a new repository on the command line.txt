@@ -1,0 +1,46 @@
+or create a new repository on the command line
+
+echo "# Hablu-Programmer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shamsru16/Hablu-Programmer.git
+git push -u origin main
+
+push an existing repository from the command line
+
+git remote add origin https://github.com/shamsru16/Hablu-Programmer.git
+git branch -M main
+git push -u origin main
+
+set git bash as default in "settings.json"
+
+"terminal.integrated.defaultProfile.windows": "Git Bash",
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+
+changing "user.name" & "user.email" from "git bash" desktop app
+
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config user.name
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config user.email
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config --global user.name "shamsru16"
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config --global user.email "shamsru16@gmail.com"
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config user.name
+shamsru16
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+git config user.email
+shamsru16@gmail.com
+
+SHAAD SHAMS@DESKTOP-287EIV0 MINGW64 ~ (main)
+
