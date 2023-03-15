@@ -1,20 +1,18 @@
-or create a new repository on the command line
-
-echo "# Hablu-Programmer" >> README.md
+…or create a new repository on the command line
+echo "# Practice-Hablu-Programmer" >> README.md
 git init
 git add README.md
-git branch -M main
 git commit -m "first commit"
-git remote add origin https://github.com/shamsru16/Hablu-Programmer.git
+git branch -M main
+git remote add origin https://github.com/shamsru16/Practice-Hablu-Programmer.git
 git push -u origin main
 
-push an existing repository from the command line
-
-git remote add origin https://github.com/shamsru16/Hablu-Programmer.git
+…or push an existing repository from the command line
+git remote add origin https://github.com/shamsru16/Practice-Hablu-Programmer.git
 git branch -M main
 git push -u origin main
 
-set git bash as default in "settings.json"
+set git bash as default in "settings.json" <<press ctrl+shift+p & select Preferences:Open User Settings(JSON)>>
 
 "terminal.integrated.defaultProfile.windows": "Git Bash",
 "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
