@@ -1,33 +1,32 @@
 /* When setting the style for several link states, there are some order rules:
-
 a:hover MUST come after a:link and a:visited
 a:active MUST come after a:hover (https://www.w3schools.com/css/css_link.asp)
  */
 
 a {
-    color: red;
-    text-decoration: none;
-    background-color: whitesmoke;
-    font-size: 25px;
-    padding: 5px 15px;
-    border: 5px solid black;
+  color: blue;
+  text-decoration: none;
+  background-color: whitesmoke;
+  font-size: 25px;
+  padding: 5px 15px;
+  border: 5px solid black;
 }
-
+/* there is an issue of not changing color of visited link while using live serrver by "chrome:PrivateMode"
+The solution is such- 1. use live server by "chrome/microsoft-edge" */
+/* https://stackoverflow.com/questions/73345223/a-tag-visited-color-doesnt-change-on-hosted-website-but-that-works-good-when */
 a:visited {
-    color: yellow;
-    
+  color: darkmagenta;
 }
 
 a:hover {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
-a:active  {
-    color: blueviolet;
+a:active {
+  color: brown;
 }
 /* When setting the style for several link states, there are some order rules:
-
 a:hover MUST come after a:link and a:visited
 a:active MUST come after a:hover (https://www.w3schools.com/css/css_link.asp)
  */
