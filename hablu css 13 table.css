@@ -1,0 +1,33 @@
+/* style table within class to differences in design */
+
+.tablerowspan, table {
+  border: solid chartreuse;
+  padding: 10px;
+  margin: auto;
+
+  width: 50%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tablecolspan, table {
+  border: 8px solid cornflowerblue;
+  padding: 10px;
+  margin: auto;
+  
+    width: 100%;
+    border-collapse: separate;
+    text-align: left;
+}
+
+table  {
+width: 50%;
+border-collapse: collapse;
+text-align: left;
+}
+
+th, td {
+    border: 3px solid darkgreen;
+    color: blueviolet;
+    text-align:center;
+}
