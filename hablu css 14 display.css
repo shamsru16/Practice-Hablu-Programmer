@@ -7,7 +7,7 @@ h1 {
   /* display: none; */
 }
 
-/* span is an inline element which can be turned into block element by "display: block; css property". As a result text-align center will come to action after adding "display: block; css property"*/
+/* span is an inline element & as a result span element text contents don't show "text-align:center" in general. But by applying "display: block;" css property span element become block element. As a result "text-align: center;" will come to action.*/
 
 span1 {
   text-align: center;
@@ -16,19 +16,22 @@ span1 {
   font-size: 15px;
 }
 h2 {
-    display: inline-block;
-    text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 /* making "span2 tag" a block element which by default is an inline element by adding css tag "display: inline-block. And thus showing "h2" & "span2" contents together in one line that generally shows separately in another line */
 
 span2 {
-    text-align: center;
-    display: inline-block;
+  text-align: center;
+  /* to show that span2 is an inline element no display tag can be applied & as a result span2 contents will show inline with h2 contents  */
+  /* also by applying "display: inline-block;" in span2 contents will show inline with h2 contents  */
+  /* display: inline-block; */
+  /* by applying "display: block;" in span2 it will turn into block element & will show "text-align: center;"  */
+  /* display: block; */
 }
 
 /* showing "unorder list item" in a line by applying css tag "display: inline" */
 
 ul li {
-    display: inline;
+  display: inline;
 }
-
