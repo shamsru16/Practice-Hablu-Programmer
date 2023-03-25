@@ -1,3 +1,5 @@
+/* all about inline & block elements & turning each elements into one another by applying several css display properties */
+
 /* h1 is an block element which can be turned into inline element by "display: inline-block; css property". As a result text-align center won't work*/
 
 h1 {
@@ -35,3 +37,4 @@ span2 {
 ul li {
   display: inline;
 }
+/* all about inline & block elements & turning each elements into one another by applying several css display properties */
